@@ -17,11 +17,11 @@ data:
         - addr: 0.0.0.0
           advertise: open5gs-smf
         pfcp:
-           dev: {{ .Values.k8s.interface }}
+           dev: {{ .Values.smf.pfcp.interface }}
         gtpc:
-          dev: {{ .Values.k8s.interface }}
+          dev: {{ .Values.smf.gtpc.interface }}
         gtpu:
-          dev: {{ .Values.k8s.interface }}    
+          dev: {{ .Values.smf.gtpu.interface }}    
         subnet:
          - addr: 10.45.0.1/16
            dnn: {{ .Values.dnn }}
@@ -39,4 +39,9 @@ data:
     upf:
       pfcp:
         - name: upf-open5gs
+          addr: {{ .Values.upfmain.addr }}
           dnn: {{ .Values.dnn }}
+        - name: upf-open5gs-mec
+          addr: {{ .Values.upfmec.addr }}
+          dnn: {{ .Values.dnn2 }}
+
