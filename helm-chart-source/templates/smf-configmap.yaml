@@ -41,7 +41,6 @@ data:
       - name: upf-open5gs
         addr: {{ .Values.upfmain.addr }}
         dnn: {{ .Values.dnn }}
-      - name: upf-open5gs-mec
-        addr: {{ .Values.upfmec.addr }}
+      - addr: {{ .Values.upfmec.addr }}
         dnn: {{ .Values.dnn2 }}
 
