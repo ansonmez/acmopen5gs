@@ -9,6 +9,6 @@ entries:
     name: open5gs-5gcore-helm
     type: application
     urls:
-    - https://github.com/ansonmez/acmopen5gs/raw/main/open5gs-5gcore-helm-0.1.0.tgz
-    version: 0.1.0
+    - https://github.com/ansonmez/acmopen5gs/raw/main/open5gs-5gcore-helm-0.1.1.tgz
+    version: 0.1.1
 generated: "2021-05-22T21:39:40.500937181+02:00"

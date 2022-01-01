@@ -38,10 +38,10 @@ data:
 
     upf:
       pfcp:
-        - name: upf-open5gs
-          addr: {{ .Values.upfmain.addr }}
-          dnn: {{ .Values.dnn }}
-        - name: upf-open5gs-mec
-          addr: {{ .Values.upfmec.addr }}
-          dnn: {{ .Values.dnn2 }}
+      - name: upf-open5gs
+        addr: {{ .Values.upfmain.addr }}
+        dnn: {{ .Values.dnn }}
+      - name: upf-open5gs-mec
+        addr: {{ .Values.upfmec.addr }}
+        dnn: {{ .Values.dnn2 }}
 
